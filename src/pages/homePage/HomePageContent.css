@@ -1,0 +1,17 @@
+.container {
+  background-color: cadetblue;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.page {
+  width: 100%;
+}
+
+.page-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
