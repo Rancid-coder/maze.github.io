@@ -1,13 +1,14 @@
-import EducationContainer from "./educationComponents/EducationContainer";
-
 const Education = () => {
   return (
-    <EducationContainer
-      sectionTitle={"Education"}
-      sectionText={
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab? Nisi dolorem, cumque corrupti nihil nam minima eligendi est odit? Nihil accusantium praesentium reiciendis nisi animi eius veritatis quis minus!"
-      }
-    ></EducationContainer>
+    <div className="educationContainer">
+      <h2 className="educationText">Education</h2>
+      <p className="educationText">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad aspernatur
+        sint quam impedit obcaecati nulla dolor tenetur facilis totam. Eligendi
+        iusto odit ea rerum voluptatem dignissimos incidunt harum molestias
+        tempora.
+      </p>
+    </div>
   );
 };
 

@@ -13,29 +13,39 @@ const MainPage = () => {
   return (
     <div className="page">
       <div className="page-content">
-        <br />
-        <Presentation></Presentation>
-        <hr />
+        <div className="container">
+          <Presentation></Presentation>
+          <Contacts></Contacts>
+        </div>
+        <section className="section-spacer"></section>
         <div className="container">
           <About></About>
         </div>
-        <hr />
+        <section className="section-spacer"></section>
         <div className="container">
           <Education></Education>
         </div>
-        <hr />
-        <Experience></Experience>
-        <hr />
-        <Skills></Skills>
-        <hr />
-        <Interest></Interest>
-        <hr />
-        <Projects></Projects>
-        <hr />
-        <Publications></Publications>
-        <hr />
-        <Contacts></Contacts>
-        <hr />
+        <section className="section-spacer"></section>
+        <div className="container">
+          <Experience></Experience>
+        </div>
+        <section className="section-spacer"></section>
+        <div className="container">
+          <Skills></Skills>
+        </div>
+        <section className="section-spacer"></section>
+        <div className="container">
+          <Interest></Interest>
+        </div>
+        <section className="section-spacer"></section>
+        <div className="container">
+          <Projects></Projects>
+        </div>
+        <section className="section-spacer"></section>
+        <div className="container">
+          <Publications></Publications>
+        </div>
+        <section className="section-spacer"></section>
       </div>
     </div>
   );

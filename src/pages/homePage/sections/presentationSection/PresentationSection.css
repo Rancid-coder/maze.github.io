@@ -3,3 +3,11 @@
   height: 250px;
   border-radius: 50%;
 }
+
+.presentationContainer {
+  padding: 15px;
+}
+
+.presentationText {
+  color: #e6f1f5;
+}

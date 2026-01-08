@@ -1,11 +1,13 @@
+import "./InterestSection.css";
+
 const Interest = () => {
   return (
-    <div>
-      <h2>Areas Of Interest</h2>
+    <div className="interestContainer">
+      <h2 className="interestText">Areas Of Interest</h2>
 
-      <ul>
-        <li>Web/Mobile Development</li>
-        <li>SAP Applications Development with ABAP</li>
+      <ul className="list">
+        <li className="list-item">Web/Mobile Development</li>
+        <li className="list-item">SAP Applications Development with ABAP</li>
       </ul>
     </div>
   );

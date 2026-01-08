@@ -1,9 +1,15 @@
 .container {
-  background-color: cadetblue;
-  border-radius: 10px;
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
+  padding: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .page {
@@ -11,7 +17,11 @@
 }
 
 .page-content {
-  max-width: 1280px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
+}
+
+.section-spacer {
+  margin-bottom: 5rem;
 }
