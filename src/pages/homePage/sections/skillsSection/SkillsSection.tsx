@@ -1,4 +1,4 @@
-import "./skillsLanguageList/skillsLanguageList.css";
+import "./skillsLanguageList/SkillsLanguageList.css";
 import "./skillsList/SkillsList.css";
 import { skillsItems } from "./skillsList/SkillsList";
 import { skillsLanguageItems } from "./skillsLanguageList/SkillsLanguageList";
