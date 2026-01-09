@@ -1,19 +1,44 @@
+import "./skillsLanguageList/skillsLanguageList.css";
+import "./skillsList/SkillsList.css";
+import { skillsItems } from "./skillsList/SkillsList";
+import { skillsLanguageItems } from "./skillsLanguageList/SkillsLanguageList";
+
 const Skills = () => {
   return (
     <div className="skillsContainer">
       <h2 className="skillsText">Skills</h2>
-      <p className="skillsText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab? Nisi
-        dolorem, cumque corrupti nihil nam minima eligendi est odit? Nihil
-        accusantium praesentium reiciendis nisi animi eius veritatis quis minus!
-      </p>
+      <h3 className="skillsText">Soft Skills</h3>
+      <ul className="skillsGrid">
+        {skillsItems.map((item) => {
+          const Icon = item.icon;
+          return (
+            <li className="skillsGridItem" key={item.id}>
+              <Icon />
+              <span className="skillsValue">{item.name}</span>
+            </li>
+          );
+        })}
+      </ul>
 
       <h3 className="skillsText">Language Skills</h3>
-      <p className="skillsText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab? Nisi
-        dolorem, cumque corrupti nihil nam minima eligendi est odit? Nihil
-        accusantium praesentium reiciendis nisi animi eius veritatis quis minus!
-      </p>
+      <table className="skillsLanguageTable">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          {skillsLanguageItems.map((item) => {
+            return (
+              <tr key={item.id}>
+                <td>{item.name}</td>
+                <td>{item.level}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
   );
 };

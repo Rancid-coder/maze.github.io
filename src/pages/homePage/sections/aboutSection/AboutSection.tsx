@@ -1,3 +1,6 @@
+import OpenCV from "./cvButton/CVButton";
+import "./cvButton/CVButton.css";
+
 const About = () => {
   return (
     <div className="aboutContainer">
@@ -15,6 +18,9 @@ const About = () => {
         across IT domains, including database systems, backend architectures,
         and AI-enabled solutions.
       </p>
+      <button className="button" onClick={OpenCV("cv/cv.pdf")}>
+        Read My CV
+      </button>
     </div>
   );
 };

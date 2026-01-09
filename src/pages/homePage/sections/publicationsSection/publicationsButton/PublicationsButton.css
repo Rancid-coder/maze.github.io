@@ -1,0 +1,28 @@
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: 
+    radial-gradient(
+      1100px circle at 60% 40%,
+      rgba(0, 120, 160, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px circle at 30% 70%,
+      rgba(0, 80, 130, 0.18),
+      transparent 55%
+    ),
+    #08131a;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}

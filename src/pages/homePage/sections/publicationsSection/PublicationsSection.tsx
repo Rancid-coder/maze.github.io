@@ -1,12 +1,37 @@
+import { Fragment } from "react/jsx-runtime";
+import { publicationsItems } from "./publicationsList/PublicationsList";
+import "./publicationsList/PublicationsList.css";
+import "./publicationsButton/PublicationsButton.css";
+import { FaLink } from "react-icons/fa";
+import OpenPublication from "./publicationsButton/PublicationsButton";
+
 const Publications = () => {
   return (
     <div className="publicationsContainer">
       <h2 className="publicationsText">Publications</h2>
-      <p className="publicationsText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab? Nisi
-        dolorem, cumque corrupti nihil nam minima eligendi est odit? Nihil
-        accusantium praesentium reiciendis nisi animi eius veritatis quis minus!
-      </p>
+      <ul className="publicationsList">
+        {publicationsItems.map((item, index) => {
+          const Icon = item.icon;
+          const HyperLinkIcon = FaLink;
+          return (
+            <Fragment key={item.id}>
+              <li className="publicationsItem">
+                <Icon />
+                <span className="publicationsValue">{item.name}</span>
+                <span className="publicationsValue">{item.date}</span>
+                <button className="button" onClick={OpenPublication(item.url)}>
+                  See Publication
+                  <hr className="separatorInvisible"/>
+                  <HyperLinkIcon></HyperLinkIcon>
+                </button>
+              </li>
+              {index < publicationsItems.length - 1 && (
+                <hr className="separator" />
+              )}
+            </Fragment>
+          );
+        })}
+      </ul>
     </div>
   );
 };

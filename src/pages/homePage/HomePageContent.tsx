@@ -39,11 +39,11 @@ const MainPage = () => {
         </div>
         <section className="section-spacer"></section>
         <div className="container">
-          <Projects></Projects>
+          <Publications></Publications>
         </div>
         <section className="section-spacer"></section>
         <div className="container">
-          <Publications></Publications>
+          <Projects></Projects>
         </div>
         <section className="section-spacer"></section>
       </div>
