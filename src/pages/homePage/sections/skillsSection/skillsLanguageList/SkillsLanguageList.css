@@ -19,6 +19,7 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   table-layout: auto;
+  box-sizing: border-box;
 }
 
 .skillsLanguageTable th,

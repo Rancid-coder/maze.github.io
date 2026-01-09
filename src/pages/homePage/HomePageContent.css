@@ -14,12 +14,14 @@
 
 .page {
   width: 100%;
+  box-sizing: border-box
 }
 
 .page-content {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box
 }
 
 .section-spacer {
