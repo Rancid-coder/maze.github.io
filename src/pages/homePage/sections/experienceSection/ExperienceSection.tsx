@@ -1,6 +1,6 @@
 import { Fragment } from "react/jsx-runtime";
 import { experienceItems } from "./experienceList/ExperienceList";
-import "./experienceList/experienceList.css";
+import "./experienceList/ExperienceList.css";
 import "./experienceButton/ExperienceButton.css";
 import OpenInstitution from "./experienceButton/ExperienceButton";
 
