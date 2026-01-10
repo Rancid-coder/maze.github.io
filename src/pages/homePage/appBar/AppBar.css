@@ -11,6 +11,7 @@
 
 .portfolioAppBar .MuiToolbar-root {
   position: relative;
+  padding-right: 72px !important;
 }
 
 .appBarIconButton {
@@ -19,6 +20,7 @@
   top: 50%;
   transform: translateY(-50%);
   margin: 0 !important;
+  z-index: 1300;
 }
 
 .toolbarContent {
@@ -28,17 +30,26 @@
   justify-content: center;
   gap: 8px;
   box-sizing: border-box;
+  padding-right: 0;
 }
 
 @media (min-width: 1120px) {
   .appBarIconButton {
     display: none !important;
   }
+
+  .portfolioAppBar .MuiToolbar-root {
+    padding-right: 16px !important;
+  }
 }
 
 @media (max-width: 1119px) {
   .button {
     display: none !important;
+  }
+
+  .portfolioAppBar .MuiToolbar-root {
+    padding-right: 72px !important;
   }
 }
 .portfolioMenu .MuiPaper-root {
