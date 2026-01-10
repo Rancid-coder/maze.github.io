@@ -1,4 +1,3 @@
-import React from "react";
 import Presentation from "./sections/presentationSection/PresentationSection";
 import About from "./sections/aboutSection/AboutSection";
 import Education from "./sections/educationSection/EducationSection";
