@@ -1,3 +1,4 @@
+import React from "react";
 import Presentation from "./sections/presentationSection/PresentationSection";
 import About from "./sections/aboutSection/AboutSection";
 import Education from "./sections/educationSection/EducationSection";
@@ -7,50 +8,68 @@ import Interest from "./sections/interestSection/InterestSection";
 import Projects from "./sections/projectsSection/ProjectsSection";
 import Publications from "./sections/publicationsSection/PublicationsSection";
 import Contacts from "./sections/contactsSection/ContactsSection";
-import "./HomePageContent.css";
-import PortfolioAppBar from "./sections/appBar/AppBar";
 import { Toolbar } from "@mui/material";
+import "./HomePageContent.css";
+import PortfolioAppBar from "./appBar/AppBar";
+import PortfolioBottomBar from "./bottomBar/BottomBar";
 
 const MainPage = () => {
   return (
     <div className="page">
-      <PortfolioAppBar></PortfolioAppBar>
+      <PortfolioAppBar />
       <Toolbar />
       <div className="page-content">
         <div className="container" id="presentation">
-          <Presentation></Presentation>
-          <Contacts></Contacts>
+          <Presentation />
+          <Contacts />
         </div>
-        <section className="section-spacer"></section>
-        <div className="container" id="about">
-          <About></About>
+
+        <section className="section-spacer" />
+        <div
+          className="container"
+          id="about
+        "
+        >
+          <About />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="education">
-          <Education></Education>
+          <Education />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="experience">
-          <Experience></Experience>
+          <Experience />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="skills">
-          <Skills></Skills>
+          <Skills />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="interest">
-          <Interest></Interest>
+          <Interest />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="publications">
-          <Publications></Publications>
+          <Publications />
         </div>
-        <section className="section-spacer"></section>
+
+        <section className="section-spacer" />
         <div className="container" id="projects">
-          <Projects></Projects>
+          <Projects />
         </div>
-        <section className="section-spacer"></section>
       </div>
+
+      <section className="section-spacer" />
+
+      <PortfolioBottomBar
+        githubUrl="https://github.com/Rancid-coder"
+        linkedinUrl="https://pt.linkedin.com/in/manuel-patr%C3%ADcio-7b74742a1"
+      />
     </div>
   );
 };
