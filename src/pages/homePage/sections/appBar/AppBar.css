@@ -1,0 +1,141 @@
+.portfolioAppBar {
+  background: linear-gradient(
+    135deg,
+    rgba(8, 19, 26, 0.95) 0%,
+    rgba(0, 80, 130, 0.85) 100%
+  ) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 120, 160, 0.3) !important;
+  border-bottom: 1px solid rgba(0, 120, 160, 0.2);
+}
+
+.portfolioAppBar .MuiToolbar-root {
+  position: relative;
+}
+
+.appBarIconButton {
+  position: absolute !important;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 !important;
+}
+
+.toolbarContent {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1120px) {
+  .appBarIconButton {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1119px) {
+  .button {
+    display: none !important;
+  }
+}
+.portfolioMenu .MuiPaper-root {
+  background: linear-gradient(
+    135deg,
+    rgba(8, 19, 26, 0.98) 0%,
+    rgba(0, 80, 130, 0.95) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 120, 160, 0.3);
+  margin-top: 8px;
+  min-width: 220px;
+}
+
+.portfolioMenu .MuiMenuItem-root {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 12px 24px;
+}
+
+.portfolioMenu .MuiMenuItem-root:hover {
+  background-color: rgba(0, 120, 160, 0.2);
+  color: #ffffff;
+}
+
+.appBarIconButton {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease !important;
+  margin-right: 16px !important;
+}
+
+.appBarIconButton:hover {
+  background-color: rgba(0, 120, 160, 0.2) !important;
+  transform: scale(1.05);
+}
+
+.appBarText {
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-transform: none !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  padding: 8px 20px !important;
+  margin: 0 4px !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 0.3px;
+}
+
+.appBarText::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #0078a0, #00a0d0);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.appBarText:hover {
+  background-color: rgba(0, 120, 160, 0.15) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.appBarText:hover::after {
+  width: 70%;
+}
+
+.appBarText:active {
+  transform: translateY(0);
+}
+
+.appBarText.active {
+  background-color: rgba(0, 120, 160, 0.25) !important;
+  color: #ffffff !important;
+}
+
+.appBarText.active::after {
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .appBarText {
+    color: #ffffff;
+    font-size: 14px !important;
+    padding: 6px 16px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .appBarText {
+    color: #ffffff;
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+    margin: 0 2px !important;
+  }
+}
