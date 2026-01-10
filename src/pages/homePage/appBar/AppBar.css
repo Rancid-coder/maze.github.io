@@ -71,7 +71,6 @@
 
 .appBarIconButton:hover {
   background-color: rgba(0, 120, 160, 0.2) !important;
-  transform: scale(1.05);
 }
 
 .appBarText {
