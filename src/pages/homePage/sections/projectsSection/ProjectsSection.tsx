@@ -1,10 +1,10 @@
+import ProjectsCarousel from "./projectsCarousel/ProjectsCarousel";
+
 const Projects = () => {
   return (
     <div className="projectsContainer">
-      <h2 className="projectsText">Projects</h2>
-      <p className="projectsText">
-        No Public Project Yet To Show.
-      </p>
+      <h2 className="projectsText">Featured Projects</h2>
+      <ProjectsCarousel></ProjectsCarousel>
     </div>
   );
 };

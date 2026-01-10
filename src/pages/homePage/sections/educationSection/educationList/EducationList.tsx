@@ -13,21 +13,21 @@ export interface EducationItem {
 
 export const educationItems: EducationItem[] = [
   {
-    id: "bachelor",
-    name: "Bachelor’s in Informatics Engineering",
-    institution: "Polytechnic University of Bragança",
-    year: 2023,
-    isInstitute: true,
-    url: "https://ipb.pt/pt",
-    icon: FaSchool,
-  },
-  {
     id: "outsystems",
     name: "Associative Reactive Developer (Outsystems 11)",
     institution: "Outsystems",
     year: 2023,
     isInstitute: false,
     url: "outsystems/outsystems.pdf",
+    icon: FaSchool,
+  },
+  {
+    id: "bachelor",
+    name: "Bachelor’s in Informatics Engineering",
+    institution: "Polytechnic University of Bragança",
+    year: 2023,
+    isInstitute: true,
+    url: "https://ipb.pt/pt",
     icon: FaSchool,
   },
   {

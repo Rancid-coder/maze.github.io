@@ -24,11 +24,7 @@ const MainPage = () => {
         </div>
 
         <section className="section-spacer" />
-        <div
-          className="container"
-          id="about
-        "
-        >
+        <div className="container" id="about">
           <About />
         </div>
 
@@ -62,8 +58,6 @@ const MainPage = () => {
           <Projects />
         </div>
       </div>
-
-      <section className="section-spacer" />
 
       <PortfolioBottomBar
         githubUrl="https://github.com/Rancid-coder"
