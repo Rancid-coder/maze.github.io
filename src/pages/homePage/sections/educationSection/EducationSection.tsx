@@ -17,12 +17,12 @@ const Education = () => {
               <li className="educationItem">
                 <Icon />
                 <button
-                  className="button"
+                  className="button-edu"
                   onClick={() => {
                     if (item.isInstitute) {
-                      OpenInstitute(item.url)(); 
+                      OpenInstitute(item.url)();
                     } else {
-                      OpenCertificates(item.url)(); 
+                      OpenCertificates(item.url)();
                     }
                   }}
                 >

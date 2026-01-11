@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { projectsItems } from "../projectsList/ProjectsList";
 import { useSwipeable } from "react-swipeable";
@@ -7,6 +7,11 @@ import "./ProjectsCarousel.css";
 const ProjectsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    setExpanded(false);
+  }, [currentIndex]);
 
   const setTransitioning = (callback: () => void) => {
     setIsTransitioning(true);
@@ -40,6 +45,10 @@ const ProjectsCarousel = () => {
   });
 
   const currentProject = projectsItems[currentIndex];
+  const hasProjectUrl = currentProject.url.trim().length > 0;
+  const url = hasProjectUrl
+    ? currentProject.url
+    : `${import.meta.env.BASE_URL}${currentProject.image}`;
 
   return (
     <div className="carousel-container" {...handlers}>
@@ -55,11 +64,19 @@ const ProjectsCarousel = () => {
             <div className="carousel-content">
               <div className="carousel-image-section">
                 <div className="carousel-image-wrapper">
-                  <img
-                    src={currentProject.image}
-                    alt={currentProject.name}
-                    className="carousel-image"
-                  />
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="carousel-image-link"
+                  >
+                    <img
+                      src={currentProject.image}
+                      alt={currentProject.name}
+                      className="carousel-image"
+                    />
+                  </a>
+
                   <div className="carousel-image-overlay" />
                 </div>
               </div>
@@ -75,14 +92,29 @@ const ProjectsCarousel = () => {
                   </p>
                 </div>
                 <p className="carousel-period">{currentProject.period}</p>
-                <p className="carousel-description">
+                <p
+                  className={`carousel-description ${
+                    expanded ? "expanded" : "collapsed"
+                  }`}
+                >
                   {currentProject.description}
                 </p>
-                {currentProject.url != "" ? (
-                  <a href={currentProject.url} className="carousel-link">
-                    View Project <span className="carousel-link-arrow">→</span>
-                  </a>
-                ) : null}
+
+                <div className="carousel-actions">
+                  <button
+                    className="carousel-read-more"
+                    onClick={() => setExpanded(!expanded)}
+                  >
+                    {expanded ? "Show less" : "Read more"}
+                  </button>
+
+                  {currentProject.url.trim() !== "" && (
+                    <a href={currentProject.url} className="carousel-link">
+                      View Project{" "}
+                      <span className="carousel-link-arrow">→</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>

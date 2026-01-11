@@ -16,7 +16,10 @@ const Experience = () => {
               <li className="experienceItem">
                 <Icon />
                 <h2 className="experienceValue">{item.name}</h2>
-                <button className="button" onClick={OpenInstitution(item.url)}>
+                <button
+                  className="button-ex"
+                  onClick={OpenInstitution(item.url)}
+                >
                   {item.institution}
                 </button>
                 <span className="experienceValue">{item.period}</span>

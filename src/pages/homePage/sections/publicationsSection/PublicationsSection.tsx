@@ -12,17 +12,18 @@ const Publications = () => {
       <ul className="publicationsList">
         {publicationsItems.map((item, index) => {
           const Icon = item.icon;
-          const HyperLinkIcon = FaLink;
           return (
             <Fragment key={item.id}>
               <li className="publicationsItem">
                 <Icon />
                 <span className="publicationsValue">{item.name}</span>
                 <span className="publicationsValue">{item.date}</span>
-                <button className="button" onClick={OpenPublication(item.url)}>
-                  See Publication
-                  <hr className="separatorInvisible"/>
-                  <HyperLinkIcon></HyperLinkIcon>
+                <button
+                  className="button-pub"
+                  onClick={OpenPublication(item.url)}
+                >
+                  <span>See Publication</span>
+                  <FaLink />
                 </button>
               </li>
               {index < publicationsItems.length - 1 && (

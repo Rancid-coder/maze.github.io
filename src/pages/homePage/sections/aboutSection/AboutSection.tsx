@@ -18,7 +18,7 @@ const About = () => {
         across IT domains, including database systems, backend architectures,
         and AI-enabled solutions.
       </p>
-      <button className="button" onClick={OpenCV("cv/cv.pdf")}>
+      <button className="button-CV" onClick={OpenCV("cv/cv.pdf")}>
         Read My CV
       </button>
     </div>

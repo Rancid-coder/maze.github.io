@@ -1,10 +1,9 @@
-.button {
+.button-edu {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background: 
-    radial-gradient(
+  background: radial-gradient(
       1100px circle at 60% 40%,
       rgba(0, 120, 160, 0.22),
       transparent 60%
@@ -22,7 +21,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
+.button-edu:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
